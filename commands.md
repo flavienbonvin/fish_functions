@@ -43,6 +43,9 @@ corepack enable
 
 ```
 wget https://raw.githubusercontent.com/enkia/tokyo-night-vscode-theme/master/tokyo-night.itermcolors
+wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine.itermcolors
+wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine-moon.itermcolors
+wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine-dawn.itermcolors
 brew tap homebrew/cask-fonts
 brew install font-ibm-plex --cask
 brew install --cask font-blex-mono-nerd-font
