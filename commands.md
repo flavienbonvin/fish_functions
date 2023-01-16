@@ -26,7 +26,7 @@ fish_add_path /opt/homebrew/bin
 
 ```
 brew install imagemagick starship fisher wget
-brew install firefox google-chrome figma iina iterm2 keyboardcleantool protonvpn raycast signal spotify visual-studio-code setapp hiddenbar shottr
+brew install firefox google-chrome figma iina iterm2 keyboardcleantool protonvpn raycast signal spotify visual-studio-code hiddenbar shottr timetator
 brew install transmission --cask
 ```
 
@@ -76,37 +76,13 @@ pbcopy < ~/.ssh/github.pub
 ssh -T git@github.com
 ```
 
+Add SSH key to github
+
 ## Fish functions
 
 ```
 git clone git@github.com:flavienbonvin/fish_functions.git
-ln -s ~/dev/fish_functions/functions/\* ~/.config/fish/functions/
-```
-
-## Starship config
-
-```
-mkdir -p ~/.config && touch ~/.config/starship.toml
-```
-
-### Populate config file with following config
-
-```
-[battery]
-full_symbol = "🔋 "
-charging_symbol = "⚡️ "
-discharging_symbol = "💀 "
-
-[[battery.display]]
-threshold = 100
-style = "green"
-[[battery.display]]
-threshold = 40
-style = "yellow"
-
-[[battery.display]]
-threshold = 10
-style = "red"
+ln -s ~/dev/fish_functions/.config/fish/functions/* ~/.config/fish/functions/
 ```
 
 ### Add starship on startup

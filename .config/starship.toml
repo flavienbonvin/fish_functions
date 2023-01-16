@@ -1,0 +1,15 @@
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 100
+style = "green"
+[[battery.display]]
+threshold = 40
+style = "yellow"
+
+[[battery.display]]
+threshold = 10
+style = "red"
