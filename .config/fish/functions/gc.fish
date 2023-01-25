@@ -1,4 +1,3 @@
-function gc -d 'Commit and push to git'
+function gc -d 'Commit shorthand'
     git commit -m $argv
-    git push
 end
