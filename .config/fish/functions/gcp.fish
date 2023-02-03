@@ -1,4 +1,4 @@
-function gcp -d 'Commit and push to git'
+function gcp -d 'Git commit and push'
     git commit -m $argv
     git push
 end
