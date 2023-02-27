@@ -85,6 +85,7 @@ Add SSH key to github
 git clone git@github.com:flavienbonvin/fish_functions.git
 ln -s ~/dev/fish_functions/.config/fish/functions/* ~/.config/fish/functions/
 ln -s ~/dev/fish_functions/.config/starship.toml ~/.config/
+rm -rf g*.fish *-act.fish *-mail.fish update.fish
 ```
 
 ### Add starship on startup
