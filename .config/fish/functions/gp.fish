@@ -1,3 +1,3 @@
 function gp -d 'Git push'
-    git push
+    git push $argv
 end
