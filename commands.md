@@ -28,7 +28,13 @@ fish_add_path /opt/homebrew/bin
 brew install imagemagick starship fisher wget
 brew install firefox google-chrome figma iina iterm2 keyboardcleantool protonvpn raycast signal spotify visual-studio-code hiddenbar shottr
 brew install --cask transmission
-brew install --cask timetator
+brew install --cask macs-fan-control
+```
+
+### Proton specific
+
+```
+brew install mkcert jq haproxy bash nss
 ```
 
 ## Dev setting
