@@ -92,6 +92,7 @@ git clone git@github.com:flavienbonvin/fish_functions.git
 ln -s ~/dev/fish_functions/.config/fish/functions/* ~/.config/fish/functions/
 ln -s ~/dev/fish_functions/.config/starship.toml ~/.config/
 rm -rf g*.fish *-act.fish *-mail.fish update.fish
+rm clean.fish run-all.fish test-acc.fish validate-a*
 ```
 
 ### Add starship on startup
