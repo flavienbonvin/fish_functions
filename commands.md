@@ -13,7 +13,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/fbonvin/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-## Install brew
+## Install Fish
 
 ```
 brew install fish
@@ -26,9 +26,11 @@ fish_add_path /opt/homebrew/bin
 
 ```
 brew install imagemagick starship fisher wget
-brew install firefox google-chrome figma iina iterm2 keyboardcleantool protonvpn raycast signal spotify visual-studio-code hiddenbar shottr
+brew install arc firefox google-chrome proton-drive protonvpn iina iterm2 keyboardcleantool raycast signal spotify visual-studio-code cleanshot bartender anytype languagetool
 brew install --cask transmission
 brew install --cask macs-fan-control
+brew install --cask figma
+brew install --cask obsisian
 ```
 
 ### Proton specific
@@ -46,16 +48,11 @@ set --universal nvm_default_version lts
 corepack enable
 ```
 
-### Iterm color theme
+### Configure terminal
 
 ```
-wget https://raw.githubusercontent.com/enkia/tokyo-night-vscode-theme/master/tokyo-night.itermcolors
-wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine.itermcolors
-wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine-moon.itermcolors
-wget https://raw.githubusercontent.com/rose-pine/iterm/main/rose-pine-dawn.itermcolors
-brew tap homebrew/cask-fonts
-brew install font-ibm-plex --cask
-brew install --cask font-blex-mono-nerd-font
+fisher install IlanCosman/tide@v6
+tide configure --auto --style=Lean --prompt_colors='True color' --show_time='24-hour format' --lean_prompt_height='Two lines' --prompt_connection=Solid --prompt_connection_andor_frame_color=Dark --prompt_spacing=Compact --icons='Few icons' --transient=No
 ```
 
 ### SSH key generation
